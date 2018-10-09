@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT jint JNICALL Java_demo_server_NIOServer_socketServer
   (JNIEnv *, jclass);
 
+/*
+ * Class:     demo_server_NIOServer
+ * Method:    socketClose
+ * Signature: (I)I
+ */
+JNIEXPORT jint JNICALL Java_demo_server_NIOServer_socketClose
+  (JNIEnv *, jclass, jint);
+
 #ifdef __cplusplus
 }
 #endif

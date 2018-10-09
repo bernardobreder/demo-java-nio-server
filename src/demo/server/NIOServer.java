@@ -8,4 +8,6 @@ public class NIOServer {
 
   public static native int socketServer();
 
+  public static native int socketClose(int socket);
+
 }

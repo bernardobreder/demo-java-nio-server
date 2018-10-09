@@ -1,1 +1,2 @@
-gcc demo_server_NIOServer.c --shared -o libnioserver.dll -I. -I"C:\Program Files\Java\jdk1.8.0_181\include" -I"C:\Program Files\Java\jdk1.8.0_181\include\win32" -D__int64="long long"
+del libnioserver.dll
+x86_64-w64-mingw32-gcc -lws2_32 -lwsock32 -L"C:\Windows\System32" -shared -o libnioserver.dll -I. -I"C:\cygwin64\usr\include" -I"C:\Program Files\Java\jdk1.8.0_181\include" -I"C:\Program Files\Java\jdk1.8.0_181\include\win32" -D__int64="long long" demo_server_NIOServer.c
