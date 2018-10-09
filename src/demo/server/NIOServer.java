@@ -6,6 +6,6 @@ public class NIOServer {
     System.loadLibrary("libnioserver");
   }
 
-  private static native int socketServer();
+  public static native int socketServer();
 
 }
